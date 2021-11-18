@@ -1,0 +1,9 @@
+extends ../layout.pug
+
+block appContent
+        - const name = Object.keys(database.food).concat(Object.keys(database.electronic)).concat(Object.keys(database.stuff))[id-1]
+        - const json = JSON.stringify(eval(`database.food.${name}`))
+        - const json2 = JSON.stringify(eval(`database.stuff.${name}`))
+        - const json3 = JSON.stringify(eval(`database.electronic.${name}`))
+         
+        h1 #{name}: #{json} #{json2} #{json3}

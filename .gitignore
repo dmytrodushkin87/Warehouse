@@ -1,0 +1,4 @@
+node_modules
+config
+.nyc_output
+mongo_data

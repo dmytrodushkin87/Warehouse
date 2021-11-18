@@ -1,0 +1,8 @@
+extends ../layout.pug
+
+block appContent
+        h1 Here you are can see products of all categories
+        p You can choose the goods down below
+        - const countOfProduct = product.length
+        - for (let x = 0; x < countOfProduct; x++)
+            p Name of category is: #{newProduct[x].category.name} product is: #{product[x].name}
